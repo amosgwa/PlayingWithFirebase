@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>780611179888-5rrllkuei497hbhqdghupat77tvhi1f8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.780611179888-5rrllkuei497hbhqdghupat77tvhi1f8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCiVP9WRyRIWVCMuMD0bMRS2Gacht-bFpg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>780611179888</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.amosgwa.bookFirebase</string>
+	<key>PROJECT_ID</key>
+	<string>book-ios-db</string>
+	<key>STORAGE_BUCKET</key>
+	<string>book-ios-db.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:780611179888:ios:116420a5f4251755</string>
+	<key>DATABASE_URL</key>
+	<string>https://book-ios-db.firebaseio.com</string>
+</dict>
+</plist>
