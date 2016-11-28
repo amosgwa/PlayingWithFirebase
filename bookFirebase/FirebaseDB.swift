@@ -12,6 +12,12 @@ import Firebase
 class FirebaseDB : LibraryTableViewController {
     let ref = FIRDatabase.database().reference()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        libraryTableView.delegate = self
+    }
+    
     struct K {
         static let bookKey = "Book"
         static let titleKey = "Title"
@@ -26,6 +32,8 @@ class FirebaseDB : LibraryTableViewController {
             for item in snapshot.children {
                 // Load each snapshot
                 let book = self.convertSnapshotToBookObj(item as! FIRDataSnapshot)
+                print("self")
+                print(self)
                 self.Books.append(book)
             }
             

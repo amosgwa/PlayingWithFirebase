@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LibraryTableViewController: UITableViewController {
 
@@ -63,6 +64,16 @@ class LibraryTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         database.setupDBListeners()
+        database.ref.observe(.value, with: { (snapshot) -> Void in
+            for child in snapshot.children {
+                self.Books.append(database.convertSnapshotToBookObj(child as! FIRDataSnapshot))
+            }
+            
+            
+            print("book UITABle")
+            print(self.Books)
+            // self.tableView.insertRows(at: [IndexPath(row: self.Books.count-1, section: self.kSectionComments)], with: UITableViewRowAnimation.automatic)
+        })
         
         //Populate the table with data.
         //database.populateData()
